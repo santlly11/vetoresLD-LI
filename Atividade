@@ -1,0 +1,19 @@
+print ("Olá, vamos identificar se os valores que você irá escolher formarão um conjunto de vetores linearmente dependente ou independente?")
+a1= float(input("Insira o valor 1:  "))
+a2= float(input("Insira o valor 2:  "))
+a3= float(input("Insira o valor 3:  "))
+
+print ("Você escolheu o primeiro conjunto de vetores, abaixo insira os valores para formar o segundo conjunto")
+b1= float(input("Insira o valor 1:  ") )
+b2= float(input("Insira o valor 2:  ")  )
+b3= float(input("Insira o valor 3:  ")  )
+
+operacaod1= (a1*b2)-(a2*b1)
+operacaod2= (a1*b3)-(a3*b1)
+operacaod3= (a2*b3)-(a3*b2)
+
+#print(f"\nResultados das operações: d1 = {operacaod1}, d2 = {operacaod2}, d3 = {operacaod3}")// tornei opcional mostrar o valor de cada operação
+if operacaod1==operacaod2==operacaod3:
+  print ("Conjunto Linearmente Dependente")
+else:
+  print ("Conjunto Linearmente Independente")
